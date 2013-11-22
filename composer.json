@@ -1,7 +1,7 @@
 {
-    "name": "pugx/multi-user-bundle",
-    "type": "symfony-bundle",
-    "description": "Symfony PUGXMultiUserBundle",
+    "name": "pugx/multiuserbundle",
+    "type": "symfonybundle",
+    "description": "Symfony PUGXMultiUserBundle tweaked for SonataUserBundle functionality",
     "keywords": ["user management multi user management"],
     "homepage": "https://github.com/PUGX",
     "license": "MIT",
@@ -15,15 +15,17 @@
             "homepage": "https://github.com/PUGX/PUGXMultiUserBundle/contributors"
         }
     ],
-    "minimum-stability": "dev",
+    "minimumstability": "dev",
     "require": {
-        "friendsofsymfony/user-bundle": "1.3.*",
-        "symfony/form": "2.1.*"
+        "friendsofsymfony/userbundle": "~1.3",
+        "symfony/form": "~2.2"
     },
     "suggest": {
     },
     "autoload": {
-        "psr-0": { "PUGX\\MultiUserBundle": "" }
+        "psr0": { 
+            "PUGX\\MultiUserBundle": "vendor/aletz/multiuserbundle"
+        }
     },
-    "target-dir": "PUGX/MultiUserBundle"
+    "targetdir": "PUGX/MultiUserBundle"
 }
